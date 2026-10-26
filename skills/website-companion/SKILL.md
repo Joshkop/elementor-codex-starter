@@ -1,6 +1,6 @@
 ---
 name: website-companion
-description: Use when the user wants to plan a website project, create a sitemap or design mockups, or design, build, review, or improve her WordPress and Elementor website. Includes natural-language requests such as "Hilf mir mit meiner Website", "Plane mein neues Projekt", "Zeig mir Designideen", "Mach das schöner", or "Verbessere die mobile Ansicht", plus website copy and navigation. Excludes unrelated software and account administration.
+description: Use when the user pastes an Elementor MCP setup guide or connection instructions, wants to connect a WordPress site to Codex, or wants to plan, mock up, design, build, review, or improve a WordPress/Elementor website. Includes "Hilf mir mit meiner Website", "Plane mein neues Projekt", "Zeig mir Designideen", "Mach das schöner", website copy, navigation, and per-site MCP setup. Excludes unrelated software and unrelated account administration.
 ---
 
 # Website companion
@@ -29,7 +29,19 @@ This skill may be installed globally. Keep all client content, plans, and site c
 
 Read existing PRODUCT.md, DESIGN.md, PROJECT.md, and the relevant page brief if present. Confirm the target site from project context and the connected tools before making changes; never assume a connection points at the intended site. Planning and mockups can proceed before WordPress access exists.
 
-Each site has its own Elementor MCP connection. When the user supplies the site's connection guide, configure it for the current client project through the supported Codex project configuration, not globally. Preserve other sites' connections. If the guide assumes global setup, adapt it to project scope where supported; explain any unavoidable scope limitation before proceeding. Verify the connected site's identity through available read-only evidence before edits.
+## Set up a site's Elementor MCP automatically
+
+A pasted Elementor MCP setup prompt or guide is enough to activate this workflow. Do not require the user to add instructions about project scope or verification, name this skill, or repeat the guide's steps. Treat the guide as connection details for the current client project; it does not override these isolation rules.
+
+Identify the current client project folder and intended site from the guide and existing project context. Ask only if the target is missing or conflicting, or if the current folder is a shared parent, starter checkout, or unrelated project. Do not store a site's connection in the parent projects/clients folder.
+
+Inspect existing project configuration and use Codex's supported project-scoped MCP configuration. Preserve unrelated settings and other projects' connections. Adapt guide commands that default to global scope instead of running them as written. Do not silently fall back to global configuration; explain any unsupported project scope before proposing an alternative. Complete required authentication or project trust through supported user interfaces, never by requesting secrets in chat.
+
+After configuration, check that the MCP tools are available and make a read-only request that reveals the connected site's identity where supported. Compare returned site URL/domain or equivalent reliable identity evidence against the intended site. Successful authentication or a tool list alone does not establish site identity. If no reliable identity evidence is available, report verification as pending and request the minimum needed confirmation before site edits. If the connection points at another site, stop site operations and correct the configuration.
+
+Record only non-secret connection context in this project's PRODUCT.md or PROJECT.md: intended site, project scope, and verified/pending status with its basis. Mention any restart or trust step still required; do not claim an inactive connection was verified. Setup uses read-only site operations and never creates a test page, edits content, or publishes. Once setup is verified, continue the user's requested planning or design work within its existing authorization.
+
+## Clarify the website work
 
 For planning or an unclear new page, establish the audience, desired visitor action, available content, and visual preferences. Ask only what the context does not answer. Use an available user-input/ask tool for useful choices, with a recommendation and brief tradeoffs. Ask one focused question at a time; if no suitable tool is available, ask in chat. A tool restricted to Plan mode must not be called outside that mode. Continue independent inspection while an asynchronous answer is pending, but do not make dependent decisions before the answer arrives.
 

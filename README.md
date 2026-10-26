@@ -18,7 +18,7 @@ Projects/
     Client-B/              # separate website context and Elementor MCP
 ```
 
-Run the global setup once. Open the relevant client folder in Codex before following Elementor's site-specific MCP setup guide. Ask Codex to configure that connection for this project only, then verify it points to the intended site. Repeat the MCP setup for every site; do not rerun the global skill installation for every client.
+Run the global setup once. Open the relevant client folder in Codex and paste Elementor's site-specific MCP setup prompt or guide. The website-companion skill automatically handles project-only configuration and verification of the intended site; no extra wording or skill command is needed. Repeat the MCP setup for every site; do not rerun the global skill installation for every client.
 
 > Ich möchte eine Website für eine Hundeschule planen. Hilf mir mit Seitenstruktur, Inhalten und ersten Designentwürfen.
 
