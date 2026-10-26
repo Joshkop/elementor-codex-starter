@@ -4,7 +4,7 @@ The user who asks you to follow this file authorizes global installation of this
 
 ## 1. Prepare
 
-Clone https://github.com/Joshkop/elementor-codex-starter into a user-owned tools directory, outside any client website folder, or use an existing clone. Read the installer and supplied instructions before running them. Preserve existing user instructions, settings, and skills. Read any applicable local instructions.
+Clone https://github.com/Joshkop/elementor-codex-starter into a user-owned tools directory, outside any client website folder, or use an existing clone. A sibling of the client folders under the user's projects folder is also suitable. The starter clone is an installation source, not a parent workspace in which to design client sites. Read the installer and supplied instructions before running them. Preserve existing user instructions, settings, and skills. Read any applicable local instructions.
 
 Check for Codex, Git, Python 3.9+, Node.js 18.19+, pnpm, and Bash. Use only pnpm for package-manager commands. If prerequisites are missing, explain the exact missing pieces and use a user-approved setup route; do not silently substitute another package manager or system installation. Check the Node requirement reported by upstream packages too.
 
@@ -47,6 +47,8 @@ Image generation is optional for this HTML/CSS preview. Report available image t
 
 Have the user open a dedicated project folder and describe the website in ordinary language. Keep project content out of this starter repository and the global skill directory. Planning and mockups can begin immediately.
 
-For actual site changes, identify the intended site and guide the user through its Elementor MCP connection and authentication. Do not invent an endpoint or assume another client's connection is correct. Never request credentials in chat. During setup verify access with read-only operations only; do not create a test page or change site content.
+For actual site changes, identify the intended site and guide the user through its Elementor MCP connection and authentication. Each site has a separate MCP connection. The user may paste Elementor's site-specific setup guide while working in that client's project folder. Follow that guide while keeping the site's MCP configuration scoped to that project using the supported Codex project configuration. Do not install a client's site connection globally or replace another project's connection. If the supplied guide only configures a global connection, adapt the scope using supported configuration or explain the limitation before making the global change. Complete any required project trust or authentication through the supported user interface.
+
+Do not invent an endpoint or assume another client's connection is correct. Never request credentials in chat. During setup verify access with read-only operations only; do not create a test page or change site content.
 
 Finish with a brief verified/pending list and the next useful action. Do not claim installation, browser rendering, click feedback, or WordPress access that was not actually checked.

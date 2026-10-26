@@ -29,6 +29,8 @@ This skill may be installed globally. Keep all client content, plans, and site c
 
 Read existing PRODUCT.md, DESIGN.md, PROJECT.md, and the relevant page brief if present. Confirm the target site from project context and the connected tools before making changes; never assume a connection points at the intended site. Planning and mockups can proceed before WordPress access exists.
 
+Each site has its own Elementor MCP connection. When the user supplies the site's connection guide, configure it for the current client project through the supported Codex project configuration, not globally. Preserve other sites' connections. If the guide assumes global setup, adapt it to project scope where supported; explain any unavoidable scope limitation before proceeding. Verify the connected site's identity through available read-only evidence before edits.
+
 For planning or an unclear new page, establish the audience, desired visitor action, available content, and visual preferences. Ask only what the context does not answer. Use an available user-input/ask tool for useful choices, with a recommendation and brief tradeoffs. Ask one focused question at a time; if no suitable tool is available, ask in chat. A tool restricted to Plan mode must not be called outside that mode. Continue independent inspection while an asynchronous answer is pending, but do not make dependent decisions before the answer arrives.
 
 For a specific improvement, inspect the target and do the requested work directly. Do not force a fresh interview for every edit. For "make it nicer", identify the main problems and suggest a concrete direction before making a broad redesign. A planning or review request alone does not authorize website edits.

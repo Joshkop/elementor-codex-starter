@@ -10,6 +10,16 @@ Open Codex on your computer and paste:
 
 After setup, open a separate folder for each website and describe what you want:
 
+```text
+Projects/
+  elementor-codex-starter/  # setup source; skills are installed globally
+  Clients/
+    Client-A/              # own website context and Elementor MCP
+    Client-B/              # separate website context and Elementor MCP
+```
+
+Run the global setup once. Open the relevant client folder in Codex before following Elementor's site-specific MCP setup guide. Ask Codex to configure that connection for this project only, then verify it points to the intended site. Repeat the MCP setup for every site; do not rerun the global skill installation for every client.
+
 > Ich möchte eine Website für eine Hundeschule planen. Hilf mir mit Seitenstruktur, Inhalten und ersten Designentwürfen.
 
 > Zeig mir drei unterschiedliche Varianten für die Startseite im Browser.
